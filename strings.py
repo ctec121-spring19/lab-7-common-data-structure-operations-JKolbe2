@@ -15,8 +15,13 @@ def main():
     #    least 3 words in it
     # your code below here
 
+    s1= "At least 3 different and exciting words"
+    s2= input()
+
     # print both strings
 
+    print("First string:", s1)
+    print("Second string:", s2)
 
     '''
     - element access
@@ -31,6 +36,9 @@ def main():
     # the output line should contain the value of the index as well as 
     # the character
     # your code below here
+
+    for i in range(1,len(s1),3):
+        print(s1[i])
 
 
     '''
@@ -65,6 +73,10 @@ def main():
 
     # use concatenation to form snew and print it
 
+    snew = s1[4:8] + s2[0:4]
+    print(snew)
+
+
 
     '''
     - element updates
@@ -73,6 +85,8 @@ def main():
     # so common Python has a method for it. Use the replace() method to 
     # replace a word in s1. Assign the new string to snew and print it.
 
+    snew = s1.replace("least","REPLACED")
+    print(snew)
 
     '''
     Last item
@@ -80,8 +94,8 @@ def main():
     # in this section we will illustrate the split() method. This is a lead-in
     # to the next program file "lists.py"
     # Set variable named "l" to s1.split()
-
+    l = s1.split()
     # print l
+    print(l)
 
-
-    main()
+main()
